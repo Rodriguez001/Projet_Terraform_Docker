@@ -6,4 +6,11 @@
 .terraform/
 terraform.tfstate.backup
 
-site-website-example
+
+# Ignore Terraform state files
+infra/*.tfstate
+infra/*.tfstate.*
+
+# Ignore directories used for Terraform state and logs
+infra/.terraform/
+infra/terraform.tfstate.backup
