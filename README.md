@@ -11,3 +11,7 @@ localhost:81
 3. Une fois terminé, on detruit l'infrastructure : 
 
 sh ./destroy.sh
+
+4. Un pipeline est mis en place 
+
+.github/workflows/Deployment_docker_terraform.yml
