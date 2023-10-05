@@ -1,2 +1,7 @@
-./terraform*
-terraform.*
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore directories used for Terraform state and logs
+.terraform/
+terraform.tfstate.backup
