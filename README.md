@@ -8,6 +8,6 @@ sh ./deploy.sh
 
 localhost:81
 
-3. Une fois terminer, on detruit l'infrastructure : 
+3. Une fois terminé, on detruit l'infrastructure : 
 
 sh ./destroy.sh

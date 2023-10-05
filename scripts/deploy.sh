@@ -2,11 +2,12 @@
 
 # Se placer dans le folder de l'infra
 # Exécuter Terraform init et apply
+#cd $PWD && cd ../infra
 terraform -chdir=../infra init
 # Check the syntax
 terraform -chdir=../infra fmt -check
 # We plan 
-# terraform -chdir=../infra plan -input=false 
+ terraform -chdir=../infra plan -input=false 
 # We apply 
 terraform -chdir=../infra apply -auto-approve 
 
