@@ -1,10 +1,20 @@
 #!/bin/bash
 
 # Se placer dans le folder de l'infra
-cd ../infra
+path_infra="$PWD/infra"
+if [ -d path_infra ]; then        
+        cd path_infra        
+else
+        echo "Directory does not exist: $path_infra"
+fi
 # Exécuter Terraform init et apply
 terraform init
-terraform apply -auto-approve
+# Check the syntax
+terraform fmt -check
+# We plan 
+terraform plan -input=false
+# We apply 
+terraform apply -auto-approve -input=false
 
 # Vérifier si la création a réussi
 if [ $? -eq 0 ]; then
