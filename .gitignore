@@ -5,12 +5,16 @@
 # Ignore directories used for Terraform state and logs
 .terraform/
 terraform.tfstate.backup
+terraform.tfstate
 
 
 # Ignore Terraform state files
 ./infra/terraform.tfstate
 ./infra/*.tfstate.*
+./infra/.terraform.lock.*
 
 # Ignore directories used for Terraform state and logs
-./nfra/.terraform/
+./nfra/.terraform/*
 ./infra/terraform.tfstate.backup
+
+./script/terraform.tfstate
