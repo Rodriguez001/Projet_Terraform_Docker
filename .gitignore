@@ -8,7 +8,7 @@ terraform.tfstate.backup
 
 
 # Ignore Terraform state files
-./infra/*.tfstate
+./infra/terraform.tfstate
 ./infra/*.tfstate.*
 
 # Ignore directories used for Terraform state and logs
